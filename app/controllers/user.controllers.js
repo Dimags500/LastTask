@@ -54,9 +54,9 @@ const updateUserById = async (req, res) => {
 const deleteUserById = async (req, res) => {
   try {
     const { id: userID } = req.params;
-    const res = await User.findByIdAndDelete({ _id: userID });
+    const user = await User.findByIdAndDelete({ _id: userID });
 
-    res.status(200).send("removed");
+    res.status(200).send({ data: user });
   } catch (error) {
     console.log(error);
     res.send(error.message);
