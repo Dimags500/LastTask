@@ -1,4 +1,4 @@
 export const keys = {
-  MONGO_USER: "MONGO_USER ",
-  MONGO_PASS: "MONGO_PASS",
+  MONGO_USER: "dima",
+  MONGO_PASS: "RwCZFA7Gr67ShlQI",
 };

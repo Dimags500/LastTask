@@ -44,7 +44,7 @@ const updateUserById = async (req, res) => {
     const user = await User.findByIdAndUpdate({ _id: userID }, userBody, {
       new: true,
     });
-    req.status(200).send(user);
+    res.status(200).send(user);
   } catch (error) {
     console.log(error);
     res.send(error.message);
